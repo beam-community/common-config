@@ -1,0 +1,57 @@
+---
+name: CI
+
+on:
+  pull_request:
+    types:
+      - opened
+      - reopened
+      - synchronize
+  push:
+    branches:
+      - main
+
+jobs:
+  Test:
+    runs-on: ubuntu-latest
+
+    strategy:
+      fail-fast: false
+      matrix:
+        repository:
+          - ua_parser 
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          persist-credentials: true
+          repository: ${{ format('beam-community/{0}', matrix.repository) }}
+          token: ${{ secrets.GH_PERSONAL_ACCESS_TOKEN }}
+
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Sync
+        uses: stordco/actions-sync@v1
+        with:
+          pr-enabled: false
+          sync-auth: doomspork:${{ secrets.GH_PERSONAL_ACCESS_TOKEN }}
+          sync-repository: github.com/beam-community/common-config.git
+          sync-tree: ${{ github.event.pull_request.head.sha || 'main' }}
+
+      - name: Clean
+        run: |
+          rm -rf _build
+          rm -rf .git
+          rm -rf deps
+          rm -rf node_modules
+
+      - name: Archive
+        uses: actions/upload-artifact@v3
+        with:
+          name: Test ${{ matrix.repository }}
+          path: ${{ github.workspace }}/**/*
+          retention-days: 1
