@@ -1,0 +1,47 @@
+---
+name: Publish
+
+on:
+  release:
+    types:
+      - released
+      - prereleased
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+  id-token: write
+  packages: write
+
+jobs:
+  Sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Sync Repositories
+        uses: actions/github-script@v6
+        with:
+          github-token: ${{ secrets.GH_PERSONAL_ACCESS_TOKEN }}
+          script: |
+            const { data } = await github.rest.search.code({
+              q: 'org:beam-community path:.github/workflows/common-config.yaml',
+              per_page: 100,
+            })
+
+            const repositories = data.items
+              .map((i) => i.repository)
+              .filter((repo, index, list) => {
+                return list.findIndex((r) => r.id === repo.id) === index;
+              });
+
+            core.info(`Found ${repositories.length} repositories`);
+
+            for (const repository of repositories) {
+              core.info(`Dispatching workflow for ${repository.full_name}`);
+
+              await github.rest.repos.createDispatchEvent({
+                owner: repository.owner.login,
+                repo: repository.name,
+                event_type: 'common-config'
+              });
+            }
