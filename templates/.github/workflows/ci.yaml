@@ -16,12 +16,10 @@ on:
     secrets:
       GH_PERSONAL_ACCESS_TOKEN:
         required: true
-      HEX_API_KEY:
-        required: true
   workflow_dispatch:
 
 concurrency:
-  group: $\{{ github.head_ref || github.run_id }}
+  group: CI $\{{ github.head_ref || github.run_id }}
   cancel-in-progress: true
 
 jobs:
@@ -36,7 +34,6 @@ jobs:
         uses: stordco/actions-elixir/setup@v1
         with:
           github-token: $\{{ secrets.GH_PERSONAL_ACCESS_TOKEN }}
-          hex-token: $\{{ secrets.HEX_API_KEY }}
 
       - name: Credo
         run: mix credo --strict
@@ -52,7 +49,6 @@ jobs:
         uses: stordco/actions-elixir/setup@v1
         with:
           github-token: $\{{ secrets.GH_PERSONAL_ACCESS_TOKEN }}
-          hex-token: $\{{ secrets.HEX_API_KEY }}
 
       - name: Unused
         run: mix deps.unlock --check-unused
@@ -68,7 +64,6 @@ jobs:
         uses: stordco/actions-elixir/setup@v1
         with:
           github-token: $\{{ secrets.GH_PERSONAL_ACCESS_TOKEN }}
-          hex-token: $\{{ secrets.HEX_API_KEY }}
 
       - name: Dialyzer
         run: mix dialyzer --format github
@@ -84,7 +79,6 @@ jobs:
         uses: stordco/actions-elixir/setup@v1
         with:
           github-token: $\{{ secrets.GH_PERSONAL_ACCESS_TOKEN }}
-          hex-token: $\{{ secrets.HEX_API_KEY }}
 
       - name: Format
         run: mix format --check-formatted
@@ -120,7 +114,6 @@ jobs:
         with:{{#if IS_MIX_PACKAGE}}
           elixir-version: $\{{ matrix.versions.elixir }}{{/if}}
           github-token: $\{{ secrets.GH_PERSONAL_ACCESS_TOKEN }}
-          hex-token: $\{{ secrets.HEX_API_KEY }}
           otp-version: $\{{ matrix.versions.otp }}{{/if}}
 
       - name: Compile

@@ -24,7 +24,7 @@ jobs:
           github-token: ${{ secrets.GH_PERSONAL_ACCESS_TOKEN }}
           script: |
             const { data } = await github.rest.search.code({
-              q: 'Common Config org:beam-community path:.github/workflows/',
+              q: 'org:beam-community path:.github/workflows/common-config.yaml',
               per_page: 100,
             })
 
