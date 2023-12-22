@@ -113,7 +113,7 @@ jobs:
         uses: stordco/actions-elixir/setup@v1
         with:{{#if IS_MIX_PACKAGE}}
           elixir-version: $\{{ matrix.versions.elixir }}{{/if}}
-          github-token: $\{{ secrets.GH_PERSONAL_ACCESS_TOKEN }}
+          github-token: $\{{ secrets.GH_PERSONAL_ACCESS_TOKEN }}{{#if IS_MIX_PACKAGE}}
           otp-version: $\{{ matrix.versions.otp }}{{/if}}
 
       - name: Compile
