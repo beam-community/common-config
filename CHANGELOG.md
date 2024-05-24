@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.3](https://github.com/beam-community/common-config/compare/v1.1.2...v1.1.3) (2024-05-24)
+
+
+### Miscellaneous
+
+* Add new elixir and otp versions to CI matrix ([#6](https://github.com/beam-community/common-config/issues/6)) ([273dbf8](https://github.com/beam-community/common-config/commit/273dbf822bfe57a0c0cf37c1d506c8ac98b39e41))
+
 ## [1.1.2](https://github.com/beam-community/common-config/compare/v1.1.1...v1.1.2) (2024-01-18)
 
 
