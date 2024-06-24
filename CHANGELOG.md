@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.5](https://github.com/beam-community/common-config/compare/v1.1.4...v1.1.5) (2024-06-24)
+
+
+### Miscellaneous
+
+* Update action to v7 ([#10](https://github.com/beam-community/common-config/issues/10)) ([2faaea7](https://github.com/beam-community/common-config/commit/2faaea7b7d1d186fddcd7a8ec431f18e97d1cd25))
+
 ## [1.1.4](https://github.com/beam-community/common-config/compare/v1.1.3...v1.1.4) (2024-06-24)
 
 
