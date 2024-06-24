@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.2.0](https://github.com/beam-community/common-config/compare/v1.1.5...v1.2.0) (2024-06-24)
+
+
+### Features
+
+* Add .tool-version to common config ([#15](https://github.com/beam-community/common-config/issues/15)) ([451ca7a](https://github.com/beam-community/common-config/commit/451ca7a16b3342cfa727b3174e324206e4fbac99))
+* Add CODEOWNERS to template ([a1f1540](https://github.com/beam-community/common-config/commit/a1f154061a7365b2293bea25b3e7807452f36fa6))
+
+
+### Bug Fixes
+
+* Add refactor to semver title ([#13](https://github.com/beam-community/common-config/issues/13)) ([378b127](https://github.com/beam-community/common-config/commit/378b12790844259e89e788200f874d6162212d53))
+
 ## [1.1.5](https://github.com/beam-community/common-config/compare/v1.1.4...v1.1.5) (2024-06-24)
 
 
