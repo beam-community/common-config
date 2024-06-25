@@ -19,20 +19,20 @@ jobs:
       fail-fast: false
       matrix:
         repository:
-          - ua_parser 
+          - ua_parser
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           persist-credentials: true
           repository: ${{ format('beam-community/{0}', matrix.repository) }}
           token: ${{ secrets.GH_PERSONAL_ACCESS_TOKEN }}
 
       - name: Setup Node
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 20
 
       - name: Sync
         uses: stordco/actions-sync@v1
