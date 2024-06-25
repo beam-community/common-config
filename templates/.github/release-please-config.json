@@ -16,6 +16,11 @@
       "type": "chore",
       "section": "Miscellaneous",
       "hidden": false
+    },
+    {
+      "type": "refactor",
+      "section": "Miscellaneous",
+      "hidden": false
     }
   ],
   "draft": false,
