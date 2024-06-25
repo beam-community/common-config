@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.3.0](https://github.com/beam-community/common-config/compare/v1.2.0...v1.3.0) (2024-06-25)
+
+
+### Features
+
+* Add dependabot config ([#20](https://github.com/beam-community/common-config/issues/20)) ([30e3e58](https://github.com/beam-community/common-config/commit/30e3e587508a776f2fd4ba03f7a89a4d1b2794d8))
+* Add stale workflow ([#21](https://github.com/beam-community/common-config/issues/21)) ([e52458f](https://github.com/beam-community/common-config/commit/e52458f602a9cfedf70d2da0bddf4978edded85c))
+* Support refactor types in changelogs ([#16](https://github.com/beam-community/common-config/issues/16)) ([038274b](https://github.com/beam-community/common-config/commit/038274b315744e5f9cca85961748fba632e2716f))
+
+
+### Miscellaneous
+
+* Fixing pr message ([#19](https://github.com/beam-community/common-config/issues/19)) ([20a8661](https://github.com/beam-community/common-config/commit/20a8661586ce0012f46235c359dfd7bb8f490c55))
+
 ## [1.2.0](https://github.com/beam-community/common-config/compare/v1.1.5...v1.2.0) (2024-06-24)
 
 
