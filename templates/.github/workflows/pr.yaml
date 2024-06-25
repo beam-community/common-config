@@ -36,7 +36,7 @@ jobs:
 
             - **feat:** A new feature, resulting in a MINOR version bump.
             - **fix:** A bug fix, resulting in a PATCH version bump.
-            - **refactor:** A code change that neither fixes a bug nor adds a feature, resulting in a PATCH version bump.
+            - **refactor:** A code change that neither fixes a bug nor adds a feature.
             - **chore:** Changes unrelated to the release code, resulting in no version bump.
             - **revert:** Reverts a previous commit.
 
