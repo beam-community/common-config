@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.4.0](https://github.com/beam-community/common-config/compare/v1.3.0...v1.4.0) (2024-06-25)
+
+
+### Features
+
+* Only include fixes and features ([#22](https://github.com/beam-community/common-config/issues/22)) ([60d06c1](https://github.com/beam-community/common-config/commit/60d06c1d251b8f30a4d66490530f3854489b1a1e))
+* Standardize the license file ([#23](https://github.com/beam-community/common-config/issues/23)) ([c916b87](https://github.com/beam-community/common-config/commit/c916b87848ffdef2aff0c1909544e24e045d734c))
+
 ## [1.3.0](https://github.com/beam-community/common-config/compare/v1.2.0...v1.3.0) (2024-06-25)
 
 
