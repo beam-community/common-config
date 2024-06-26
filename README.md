@@ -4,7 +4,7 @@ This repository contains shared code for all of our Elixir repositories. This in
 
 <!-- {x-release-please-start-version} -->
 
-Currently at version `1.4.0`
+Currently at version `1.4.1`
 
 <!-- {x-release-please-end} -->
 

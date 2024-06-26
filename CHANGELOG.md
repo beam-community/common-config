@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.4.1](https://github.com/beam-community/common-config/compare/v1.4.0...v1.4.1) (2024-06-26)
+
+
+### Bug Fixes
+
+* Action versions ([#27](https://github.com/beam-community/common-config/issues/27)) ([2841ace](https://github.com/beam-community/common-config/commit/2841ace66b65a2caf1aa1b76a8a4e6a10cb818f5))
+* Codeowner location ([#29](https://github.com/beam-community/common-config/issues/29)) ([7685d8e](https://github.com/beam-community/common-config/commit/7685d8efb9192da40ae4c17eb1b4a2ea428463f6))
+* Dependabot title message ([#30](https://github.com/beam-community/common-config/issues/30)) ([920ad7a](https://github.com/beam-community/common-config/commit/920ad7a1fc1e231392ddf23666c4e68ccace1506))
+
 ## [1.4.0](https://github.com/beam-community/common-config/compare/v1.3.0...v1.4.0) (2024-06-25)
 
 
