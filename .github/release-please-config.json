@@ -10,11 +10,6 @@
       "type": "fix",
       "section": "Bug Fixes",
       "hidden": false
-    },
-    {
-      "type": "chore",
-      "section": "Miscellaneous",
-      "hidden": false
     }
   ],
   "draft": false,
