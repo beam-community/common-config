@@ -27,7 +27,7 @@ jobs:
 
       - if: ${{ steps.release.outputs.release_created }}
         name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           ref: ${{ steps.release.outputs.tag_name }}
           token: ${{ secrets.GH_PERSONAL_ACCESS_TOKEN }}
