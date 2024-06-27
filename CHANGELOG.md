@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.0](https://github.com/beam-community/common-config/compare/v1.4.1...v1.5.0) (2024-06-26)
+
+
+### Features
+
+* Update credo config ([#34](https://github.com/beam-community/common-config/issues/34)) ([775a4a2](https://github.com/beam-community/common-config/commit/775a4a28129775b5cd5501be0cd148e6824b338c))
+
 ## [1.4.1](https://github.com/beam-community/common-config/compare/v1.4.0...v1.4.1) (2024-06-26)
 
 
