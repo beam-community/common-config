@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.1](https://github.com/beam-community/common-config/compare/v1.5.0...v1.5.1) (2024-07-23)
+
+
+### Bug Fixes
+
+* Update permissions ([#37](https://github.com/beam-community/common-config/issues/37)) ([c03c932](https://github.com/beam-community/common-config/commit/c03c932ab6395eb4d36aeef39456d021ebb0ad48))
+
 ## [1.5.0](https://github.com/beam-community/common-config/compare/v1.4.1...v1.5.0) (2024-06-26)
 
 
