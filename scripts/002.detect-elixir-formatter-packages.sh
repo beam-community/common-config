@@ -4,7 +4,7 @@
 # the Elixir .formatter.exs file. To add a value in `import_deps`, add the package
 # name to the MIX_PACKAGES array below.
 
-MIX_PACKAGES=("ecto" "ecto_sql" "kafee" "open_api_spex" "patch" "phoenix" "stream_data" "typed_struct")
+MIX_PACKAGES=("ecto" "ecto_sql" "open_api_spex" "phoenix" "stream_data" "plug")
 
 # We iterate over all of the MIX_PACKAGES and check if they exist in the mix.lock file.
 # If they do, we add them to the FORMATTER_PACKAGES array.
