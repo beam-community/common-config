@@ -17,5 +17,6 @@ Currently at version `1.5.0`
 ## Usage
 
 - Copy [./templates/.github/workflows/common-config.yaml](./templates/.github/workflows/common-config.yaml) file into your repo's `/.github/workflows/` directory.
-- Create a PR
+- Alter your template file by replacing `$\{{` with `${{`.
+- Create a PR.
 - On initial merge and on a [recurring schedule](./templates/.github/workflows/common-config.yaml#L15), updates will be synced with this repository.
