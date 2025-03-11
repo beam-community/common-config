@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.7.0](https://github.com/beam-community/common-config/compare/v1.6.0...v1.7.0) (2025-03-11)
+
+
+### Features
+
+* Add hex publish docs github action ([#41](https://github.com/beam-community/common-config/issues/41)) ([43097ee](https://github.com/beam-community/common-config/commit/43097ee4c8ba0d95640639d5f92d6b3c3897bd56))
+* Bump Elixir versions ([#43](https://github.com/beam-community/common-config/issues/43)) ([ab3547a](https://github.com/beam-community/common-config/commit/ab3547ae00dc371885806e36edef35a3c126bf8b))
+
 ## [1.6.0](https://github.com/beam-community/common-config/compare/v1.5.0...v1.6.0) (2024-10-21)
 
 
