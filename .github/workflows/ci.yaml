@@ -38,7 +38,7 @@ jobs:
         uses: stordco/actions-sync@v1
         with:
           pr-enabled: false
-          sync-auth: doomspork:${{ secrets.GH_PERSONAL_ACCESS_TOKEN }}
+          sync-auth: thebeambot:${{ secrets.GH_PERSONAL_ACCESS_TOKEN }}
           sync-repository: github.com/beam-community/common-config.git
           sync-tree: ${{ github.event.pull_request.head.sha || 'main' }}
 
