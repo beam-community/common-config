@@ -106,7 +106,7 @@ jobs:
 
 {{/if}}
 {#if VALKEY_VERSION}}
-      redis:
+      valkey:
         image: valkey/valkey:{{ REDIS_VERSION }}
         ports:
           - 6379:6379
