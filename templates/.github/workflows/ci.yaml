@@ -106,7 +106,7 @@ jobs:
           POSTGRES_INITDB_ARGS: "--nosync"
 
   {{/if}}
-  {#if VALKEY_VERSION}}
+  {{#if VALKEY_VERSION}}
       valkey:
         image: valkey/valkey:{{ REDIS_VERSION }}
         ports:
