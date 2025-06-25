@@ -93,9 +93,9 @@ jobs:
     env:
       MIX_ENV: test
 
-{{#or POSTGRES_VERSION VALKEY_VERSION}}
+{{#if (or POSTGRES_VERSION VALKEY_VERSION)}}
     services:
-{{#if POSTGRES_VERSION}}
+  {{#if POSTGRES_VERSION}}
       postgres:
         image: postgres:{{ POSTGRES_VERSION }}-alpine
         ports:
@@ -105,8 +105,8 @@ jobs:
           POSTGRES_PASSWORD: postgres
           POSTGRES_INITDB_ARGS: "--nosync"
 
-{{/if}}
-{#if VALKEY_VERSION}}
+  {{/if}}
+  {#if VALKEY_VERSION}}
       valkey:
         image: valkey/valkey:{{ REDIS_VERSION }}
         ports:
@@ -119,8 +119,8 @@ jobs:
           --health-timeout 5s
           --health-retries 5
 
+  {{/if}}
 {{/if}}
-{{/or}}
 
     steps:
       - name: Checkout
