@@ -110,6 +110,8 @@ jobs:
         image: valkey/valkey:{{ REDIS_VERSION }}
         ports:
           - 6379:6379
+        volumes:
+          - valkey_data:/data
         options:
           --health-cmd "valkey-cli ping"
           --health-interval 10s
