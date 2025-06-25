@@ -93,7 +93,7 @@ jobs:
     env:
       MIX_ENV: test
 
-{{#if (or POSTGRES_VERSION VALKEY_VERSION)}}
+{{#or POSTGRES_VERSION VALKEY_VERSION}}
     services:
   {{#if POSTGRES_VERSION}}
       postgres:
@@ -120,7 +120,7 @@ jobs:
           --health-retries 5
 
   {{/if}}
-{{/if}}
+{{/or}}
 
     steps:
       - name: Checkout
