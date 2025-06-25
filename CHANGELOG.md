@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.8.0](https://github.com/beam-community/common-config/compare/v1.7.0...v1.8.0) (2025-06-25)
+
+
+### Features
+
+* Update license year ([522b904](https://github.com/beam-community/common-config/commit/522b904774bc8d4cdb133fc2d1025207a92b12de))
+
 ## [1.7.0](https://github.com/beam-community/common-config/compare/v1.6.0...v1.7.0) (2025-03-11)
 
 
