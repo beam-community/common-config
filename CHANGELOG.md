@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.9.0](https://github.com/beam-community/common-config/compare/v1.8.0...v1.9.0) (2025-06-25)
+
+
+### Features
+
+* Support Valkey service in CI ([#45](https://github.com/beam-community/common-config/issues/45)) ([2ea7d9a](https://github.com/beam-community/common-config/commit/2ea7d9a077911756c0ff2341ececff6c97e2f3ff))
+
+
+### Bug Fixes
+
+* How or is used ([db79e62](https://github.com/beam-community/common-config/commit/db79e629ae5e3a9d6cb140d3a61640c8a17b031d))
+* Missing { ([31079a4](https://github.com/beam-community/common-config/commit/31079a47abacc59bd3346804d29c1bbfd8199e66))
+* Or usage and nested ifs ([83d5608](https://github.com/beam-community/common-config/commit/83d56088ccfad40da216ab9303135d95b45de4f8))
+
 ## [1.8.0](https://github.com/beam-community/common-config/compare/v1.7.0...v1.8.0) (2025-06-25)
 
 
