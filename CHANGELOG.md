@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.9.1](https://github.com/beam-community/common-config/compare/v1.9.0...v1.9.1) (2025-06-25)
+
+
+### Bug Fixes
+
+* Clean-up extra whitespace ([9644630](https://github.com/beam-community/common-config/commit/96446308e8565f4b82b6f6608e49c71037a88f9c))
+
 ## [1.9.0](https://github.com/beam-community/common-config/compare/v1.8.0...v1.9.0) (2025-06-25)
 
 
