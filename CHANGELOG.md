@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.10.0](https://github.com/beam-community/common-config/compare/v1.9.1...v1.10.0) (2025-08-18)
+
+
+### Features
+
+* Update checkout action ([#50](https://github.com/beam-community/common-config/issues/50)) ([6e33201](https://github.com/beam-community/common-config/commit/6e332016da3663cb5cba21dfa441e43a869ddf5b))
+
 ## [1.9.1](https://github.com/beam-community/common-config/compare/v1.9.0...v1.9.1) (2025-06-25)
 
 
