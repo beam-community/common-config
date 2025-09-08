@@ -19,7 +19,7 @@ jobs:
 
     steps:
       - name: Sync Repositories
-        uses: actions/github-script@v7
+        uses: actions/github-script@v8
         with:
           github-token: ${{ secrets.GH_PERSONAL_ACCESS_TOKEN }}
           script: |
