@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.11.1](https://github.com/beam-community/common-config/compare/v1.11.0...v1.11.1) (2025-09-09)
+
+
+### Bug Fixes
+
+* Update dependabot for github workflow templates ([0049c5d](https://github.com/beam-community/common-config/commit/0049c5d047a12f255731b5ae75f041bccb19d9ba))
+
 ## [1.11.0](https://github.com/beam-community/common-config/compare/v1.10.0...v1.11.0) (2025-09-09)
 
 
