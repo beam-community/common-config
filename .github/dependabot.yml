@@ -8,7 +8,7 @@ updates:
       prefix: "chore(deps)"
 
   - package-ecosystem: github-actions
-    directory: "/templates"
+    directory: "/templates/.github/workflows"
     schedule:
       interval: weekly
     commit-message:
