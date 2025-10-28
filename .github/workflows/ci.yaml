@@ -50,7 +50,7 @@ jobs:
           rm -rf node_modules
 
       - name: Archive
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: Test ${{ matrix.repository }}
           path: ${{ github.workspace }}/**/*
