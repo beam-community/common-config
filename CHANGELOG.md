@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.11.0](https://github.com/beam-community/common-config/compare/v1.10.0...v1.11.0) (2025-09-09)
+
+
+### Features
+
+* Update dependabot to update github action templates ([49717ec](https://github.com/beam-community/common-config/commit/49717ecf1ac2d40149d9f7f52b84b1cc549635ab))
+
+## [1.10.0](https://github.com/beam-community/common-config/compare/v1.9.1...v1.10.0) (2025-08-18)
+
+
+### Features
+
+* Update checkout action ([#50](https://github.com/beam-community/common-config/issues/50)) ([6e33201](https://github.com/beam-community/common-config/commit/6e332016da3663cb5cba21dfa441e43a869ddf5b))
+
 ## [1.9.1](https://github.com/beam-community/common-config/compare/v1.9.0...v1.9.1) (2025-06-25)
 
 
