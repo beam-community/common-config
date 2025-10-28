@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.12.0](https://github.com/beam-community/common-config/compare/v1.11.0...v1.12.0) (2025-10-28)
+
+
+### Features
+
+* Auto-squash passing Dependabot PRs ([#58](https://github.com/beam-community/common-config/issues/58)) ([0983e78](https://github.com/beam-community/common-config/commit/0983e787d5421de7261c4850182fb0491221017d))
+
+
+### Bug Fixes
+
+* update dependabot for github workflow templates ([0049c5d](https://github.com/beam-community/common-config/commit/0049c5d047a12f255731b5ae75f041bccb19d9ba))
+
 ## [1.11.0](https://github.com/beam-community/common-config/compare/v1.10.0...v1.11.0) (2025-09-09)
 
 
