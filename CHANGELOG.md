@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.12.0](https://github.com/beam-community/common-config/compare/v1.11.0...v1.12.0) (2025-11-10)
+
+
+### Features
+
+* Auto-squash passing Dependabot PRs ([#58](https://github.com/beam-community/common-config/issues/58)) ([0983e78](https://github.com/beam-community/common-config/commit/0983e787d5421de7261c4850182fb0491221017d))
+
+
+### Bug Fixes
+
+* Escape template variables ([#62](https://github.com/beam-community/common-config/issues/62)) ([c6be912](https://github.com/beam-community/common-config/commit/c6be9124d88fd16bde1166b517a6707f2d8f3d85))
+* Remove release-type from GHA params ([#60](https://github.com/beam-community/common-config/issues/60)) ([897cff7](https://github.com/beam-community/common-config/commit/897cff7dd5b3fa64b928698030d3b30a099e7c1e))
+* Update dependabot for github workflow templates ([0049c5d](https://github.com/beam-community/common-config/commit/0049c5d047a12f255731b5ae75f041bccb19d9ba))
+
 ## [1.12.0](https://github.com/beam-community/common-config/compare/v1.11.0...v1.12.0) (2025-10-28)
 
 
