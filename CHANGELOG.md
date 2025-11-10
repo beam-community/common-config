@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.13.0](https://github.com/beam-community/common-config/compare/v1.12.1...v1.13.0) (2025-11-10)
+
+
+### Features
+
+* Bump GHA version ([01bec52](https://github.com/beam-community/common-config/commit/01bec5271b75de4b2c9d3bf9dcc5fd7c82a1a1a7))
+
 ## [1.12.1](https://github.com/beam-community/common-config/compare/v1.12.0...v1.12.1) (2025-11-10)
 
 
