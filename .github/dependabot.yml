@@ -1,9 +1,14 @@
 version: 2
 updates:
   - package-ecosystem: github-actions
-    directories:
-      - "/"
-      - "/templates"
+    directory: "/"
+    schedule:
+      interval: weekly
+    commit-message:
+      prefix: "chore(deps)"
+
+  - package-ecosystem: github-actions
+    directory: "/templates"
     schedule:
       interval: weekly
     commit-message:
