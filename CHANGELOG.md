@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.15.0](https://github.com/beam-community/common-config/compare/v1.14.0...v1.15.0) (2025-12-09)
+
+
+### Features
+
+* Update actions/checkout from v5 to v6 in CI workflows ([#69](https://github.com/beam-community/common-config/issues/69)) ([a7091a0](https://github.com/beam-community/common-config/commit/a7091a0768f425e1a5e879eb4fe17756b88b51fa))
+
 ## [1.14.0](https://github.com/beam-community/common-config/compare/v1.13.0...v1.14.0) (2025-12-09)
 
 
