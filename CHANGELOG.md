@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.14.0](https://github.com/beam-community/common-config/compare/v1.13.0...v1.14.0) (2025-12-09)
+
+
+### Features
+
+* Add Elixir 1.19 to CI matrix and drop 1.16 ([#67](https://github.com/beam-community/common-config/issues/67)) ([dbc80f3](https://github.com/beam-community/common-config/commit/dbc80f34aec9440e354857b994c2362ee7c9ad26))
+
 ## [1.13.0](https://github.com/beam-community/common-config/compare/v1.12.1...v1.13.0) (2025-11-10)
 
 
