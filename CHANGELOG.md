@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.16.0](https://github.com/beam-community/common-config/compare/v1.15.0...v1.16.0) (2025-12-10)
+
+
+### Features
+
+* Add cooldown to dependabot ([#72](https://github.com/beam-community/common-config/issues/72)) ([0c38d23](https://github.com/beam-community/common-config/commit/0c38d23efc6d28ece7a3b672c0bc81f02cf279bf))
+
 ## [1.15.0](https://github.com/beam-community/common-config/compare/v1.14.0...v1.15.0) (2025-12-09)
 
 
