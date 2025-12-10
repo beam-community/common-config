@@ -6,6 +6,8 @@ updates:
       interval: weekly
     commit-message:
       prefix: "chore(deps)"
+    cooldown:
+      default-days: 7
 
   - package-ecosystem: github-actions
     directory: "/templates"
@@ -13,10 +15,5 @@ updates:
       interval: weekly
     commit-message:
       prefix: "chore(deps)"
-
-  - package-ecosystem: github-actions
-    directory: "/templates/.github/workflows"
-    schedule:
-      interval: weekly
-    commit-message:
-      prefix: "chore(deps)"
+    cooldown:
+      default-days: 7
