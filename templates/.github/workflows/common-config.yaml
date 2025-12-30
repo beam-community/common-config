@@ -12,7 +12,7 @@ on:
     types:
       - common-config
   schedule:
-    - cron: "8 12 8 * *"
+    - cron: "0 0 1 * *"
   workflow_dispatch: {}
 
 concurrency:
@@ -42,7 +42,7 @@ jobs:
           otp-version: "26.0"
 
       - name: Sync
-        uses: stordco/actions-sync@v1
+        uses: beam-community/actions-sync@v1
         with:
           commit-message: "chore: sync files with beam-community/common-config"
           pr-enabled: true
