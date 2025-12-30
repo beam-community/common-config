@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.16.0](https://github.com/beam-community/common-config/compare/v1.15.0...v1.16.0) (2025-12-30)
+
+
+### Features
+
+* Add cooldown to dependabot ([#72](https://github.com/beam-community/common-config/issues/72)) ([0c38d23](https://github.com/beam-community/common-config/commit/0c38d23efc6d28ece7a3b672c0bc81f02cf279bf))
+* Add new sync config, ignore it by default ([0c5606e](https://github.com/beam-community/common-config/commit/0c5606e5ba88dee647e14fd3e03936620759efe8))
+* Check once monthly and update actions-sync ([7378858](https://github.com/beam-community/common-config/commit/737885815e2bf7dfbc34c573c666bac353be0b63))
+
+
+### Bug Fixes
+
+* YAML file extension ([61098cf](https://github.com/beam-community/common-config/commit/61098cf38c571390bf28a9eedc405ada9f9569a5))
+
 ## [1.15.0](https://github.com/beam-community/common-config/compare/v1.14.0...v1.15.0) (2025-12-09)
 
 
