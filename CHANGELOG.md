@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.16.1](https://github.com/beam-community/common-config/compare/v1.16.0...v1.16.1) (2026-04-07)
+
+
+### Bug Fixes
+
+* Use `erlef/setup-beam` in github actions ([#76](https://github.com/beam-community/common-config/issues/76)) ([bad1c9c](https://github.com/beam-community/common-config/commit/bad1c9c1603f73fe7b35da3908dcfea0fd67a527))
+
 ## [1.16.0](https://github.com/beam-community/common-config/compare/v1.15.0...v1.16.0) (2025-12-30)
 
 
