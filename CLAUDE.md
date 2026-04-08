@@ -177,6 +177,6 @@ gh workflow view ci.yaml
 ## External Dependencies
 
 - [beam-community/actions-sync](https://github.com/beam-community/actions-sync) - Template sync mechanism
-- [stordco/actions-elixir](https://github.com/stordco/actions-elixir) - Elixir setup action
+- [erlef/setup-beam](https://github.com/erlef/setup-beam) - Elixir/OTP setup action
 - [google-github-actions/release-please-action](https://github.com/google-github-actions/release-please-action) - Release automation
-- [stordco/actions-pr-title](https://github.com/stordco/actions-pr-title) - PR title validation
+- [beam-community/actions-pr-title](https://github.com/beam-community/actions-pr-title) - PR title validation
