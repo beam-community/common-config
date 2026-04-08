@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.17.0](https://github.com/beam-community/common-config/compare/v1.16.1...v1.17.0) (2026-04-08)
+
+
+### Features
+
+* Replace all stordco action references with beam-community equivalents ([#78](https://github.com/beam-community/common-config/issues/78)) ([0b8baf3](https://github.com/beam-community/common-config/commit/0b8baf302d1b751b166357a20c406784154a6b63))
+
 ## [1.16.1](https://github.com/beam-community/common-config/compare/v1.16.0...v1.16.1) (2026-04-07)
 
 
