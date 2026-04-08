@@ -143,10 +143,10 @@ jobs:
 
       - name: Setup Elixir
         uses: erlef/setup-beam@v1
-        with:{{#if IS_MIX_PACKAGE}}
-          elixir-version: $\{{ matrix.versions.elixir }}{{/if}}
-          github-token: $\{{ secrets.GH_PERSONAL_ACCESS_TOKEN }}{{#if IS_MIX_PACKAGE}}
-          otp-version: $\{{ matrix.versions.otp }}{{/if}}
+        with:
+          elixir-version: {{#if IS_MIX_PACKAGE}}$\{{ matrix.versions.elixir }}{{else}}"1.19"{{/if}}
+          github-token: $\{{ secrets.GH_PERSONAL_ACCESS_TOKEN }}
+          otp-version: {{#if IS_MIX_PACKAGE}}$\{{ matrix.versions.otp }}{{else}}"27.0"{{/if}}
 
       - run: mix deps.get
 
