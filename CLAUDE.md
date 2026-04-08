@@ -4,7 +4,7 @@ This file provides guidance for AI assistants working with the beam-community/co
 
 ## Project Overview
 
-This repository provides shared configuration files for all BEAM Community Elixir projects. It automatically syncs CI/CD workflows, linting configurations, and tooling standards to downstream repositories using [stordco/actions-sync](https://github.com/stordco/actions-sync).
+This repository provides shared configuration files for all BEAM Community Elixir projects. It automatically syncs CI/CD workflows, linting configurations, and tooling standards to downstream repositories using [beam-community/actions-sync](https://github.com/beam-community/actions-sync).
 
 **Key Purpose:** Single source of truth for consistent Elixir project configuration across the organization.
 
@@ -39,7 +39,7 @@ common-config/
 - **GitHub Actions** for CI/CD
 - **Release Please** for semantic versioning
 - **Dependabot** for dependency updates
-- **stordco/actions-sync** for template distribution
+- **beam-community/actions-sync** for template distribution
 
 ## Template System
 
@@ -176,7 +176,7 @@ gh workflow view ci.yaml
 
 ## External Dependencies
 
-- [stordco/actions-sync](https://github.com/stordco/actions-sync) - Template sync mechanism
+- [beam-community/actions-sync](https://github.com/beam-community/actions-sync) - Template sync mechanism
 - [stordco/actions-elixir](https://github.com/stordco/actions-elixir) - Elixir setup action
 - [google-github-actions/release-please-action](https://github.com/google-github-actions/release-please-action) - Release automation
 - [stordco/actions-pr-title](https://github.com/stordco/actions-pr-title) - PR title validation
