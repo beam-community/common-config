@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.18.0](https://github.com/beam-community/common-config/compare/v1.17.0...v1.18.0) (2026-05-01)
+
+
+### Features
+
+* Migrate conventional commit enforcement to commitlint ([#84](https://github.com/beam-community/common-config/issues/84)) ([fdff411](https://github.com/beam-community/common-config/commit/fdff411c569451fe5da113eb6b6b698fc8ef6335))
+
 ## [1.17.0](https://github.com/beam-community/common-config/compare/v1.16.1...v1.17.0) (2026-04-08)
 
 
