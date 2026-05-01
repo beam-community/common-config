@@ -81,7 +81,14 @@ This project follows [Conventional Commits](https://www.conventionalcommits.org/
 - `feat:` - New feature (MINOR version bump)
 - `fix:` - Bug fix (PATCH version bump)
 - `refactor:` - Code change without feature/fix (no bump)
+- `docs:` - Documentation changes (no bump)
+- `style:` - Formatting, whitespace (no bump)
+- `perf:` - Performance improvement (no bump)
+- `test:` - Adding or updating tests (no bump)
+- `build:` - Build system or dependency changes (no bump)
+- `ci:` - CI/CD configuration changes (no bump)
 - `chore:` - Maintenance (no bump, excluded from changelog)
+- `revert:` - Reverts a previous commit (no bump)
 - `feat!:` / `fix!:` / `refactor!:` - Breaking change (MAJOR version bump)
 
 **Examples:**
