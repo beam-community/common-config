@@ -10,23 +10,19 @@ on:
       - synchronize
 
 jobs:
-  title:
-    name: Check Title
+  Commits:
+    name: Conventional Commits
     runs-on: ubuntu-latest
 
+    permissions:
+      contents: read
+      pull-requests: read
+
     steps:
-      - name: Check
-        uses: beam-community/actions-pr-title@v1.0.0
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6
         with:
-          regex: '^(feat!|fix!|fix|feat|chore)(\(\w+\))?:\s(\[#\d{1,5}\])?.*$'
-          hint: |
-            Your PR title does not match the Conventional Commits convention. Please rename your PR to match one of the following formats:
+          fetch-depth: 0
 
-            fix: [#123] some title of the PR
-            fix(scope): [#123] some title of the PR
-            feat: [#1234] some title of the PR
-            chore: update some action
-
-            Note: Adding ! (i.e. `feat!:`) represents a breaking change and will result in a SemVer major release.
-
-            See https://www.conventionalcommits.org/en/v1.0.0/ for more information.
+      - uses: wagoid/commitlint-github-action@b948419dd99f3fd78a6548d48f94e3df7f6bf3ed # v6
+        with:
+          configFile: .commitlintrc.yml
