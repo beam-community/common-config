@@ -1,0 +1,19 @@
+{
+  $schema: 'https://docs.renovatebot.com/renovate-schema.json',
+  // Monthly so updates land before the downstream sync on the 8th of each month
+  extends: ['config:recommended', 'schedule:monthly'],
+  // Dependabot cannot scan workflow files outside the repo root .github/workflows,
+  // so Renovate handles the synced templates while Dependabot keeps the repo's own workflows.
+  enabledManagers: ['github-actions'],
+  'github-actions': {
+    managerFilePatterns: ['/^templates/\\.github/workflows/.+\\.ya?ml$/'],
+  },
+  packageRules: [
+    {
+      matchFileNames: ['.github/workflows/**'],
+      enabled: false,
+    },
+  ],
+  // Match the 7-day cooldown used by the Dependabot config
+  minimumReleaseAge: '7 days',
+}
