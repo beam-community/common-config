@@ -1,7 +1,8 @@
 {
   $schema: 'https://docs.renovatebot.com/renovate-schema.json',
   // Monthly so updates land before the downstream sync on the 8th of each month
-  extends: ['config:recommended', 'schedule:monthly'],
+  // Pin actions to full commit SHAs with the tag kept as a trailing comment
+  extends: ['config:recommended', 'schedule:monthly', 'helpers:pinGitHubActionDigests'],
   // Dependabot cannot scan workflow files outside the repo root .github/workflows,
   // so Renovate handles the synced templates while Dependabot keeps the repo's own workflows.
   enabledManagers: ['github-actions'],
