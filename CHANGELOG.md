@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.19.1](https://github.com/beam-community/common-config/compare/v1.19.0...v1.19.1) (2026-07-14)
+
+
+### Bug Fixes
+
+* **renovate:** Trigger releases for template dependency bumps ([#103](https://github.com/beam-community/common-config/issues/103)) ([109eb0b](https://github.com/beam-community/common-config/commit/109eb0ba7ea463c4afa2fd991d094663d56d3205))
+
 ## [1.19.0](https://github.com/beam-community/common-config/compare/v1.18.0...v1.19.0) (2026-07-14)
 
 
