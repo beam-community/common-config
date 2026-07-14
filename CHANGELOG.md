@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.19.2](https://github.com/beam-community/common-config/compare/v1.19.1...v1.19.2) (2026-07-14)
+
+
+### Bug Fixes
+
+* Detect public package function head in mix.exs ([#105](https://github.com/beam-community/common-config/issues/105)) ([fc2da0b](https://github.com/beam-community/common-config/commit/fc2da0b5f0f3299738f595b2fc8e80839c51243a))
+
 ## [1.19.1](https://github.com/beam-community/common-config/compare/v1.19.0...v1.19.1) (2026-07-14)
 
 
