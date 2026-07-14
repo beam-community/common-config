@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.19.0](https://github.com/beam-community/common-config/compare/v1.18.0...v1.19.0) (2026-07-14)
+
+
+### Features
+
+* Trigger release for renovate automation ([#97](https://github.com/beam-community/common-config/issues/97)) ([2303ed5](https://github.com/beam-community/common-config/commit/2303ed5493bf2b53c4854a94b8690776a17ef1d7))
+
 ## [1.18.0](https://github.com/beam-community/common-config/compare/v1.17.0...v1.18.0) (2026-05-01)
 
 
