@@ -35,7 +35,7 @@ jobs:
           node-version: 20
 
       - name: Sync
-        uses: beam-community/actions-sync@v1
+        uses: beam-community/actions-sync@v1.14.0
         with:
           pr-enabled: false
           sync-auth: thebeambot:${{ secrets.GH_PERSONAL_ACCESS_TOKEN }}
