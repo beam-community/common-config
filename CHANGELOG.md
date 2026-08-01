@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.19.3](https://github.com/beam-community/common-config/compare/v1.19.2...v1.19.3) (2026-08-01)
+
+
+### Bug Fixes
+
+* **deps:** Update actions/checkout action to v7.0.1 ([#112](https://github.com/beam-community/common-config/issues/112)) ([f8b24ed](https://github.com/beam-community/common-config/commit/f8b24ede3244944fa52e74585d4619a8ebdae70f))
+* **deps:** Update actions/checkout digest to 3d3c42e ([#111](https://github.com/beam-community/common-config/issues/111)) ([67ff5a2](https://github.com/beam-community/common-config/commit/67ff5a2cc581e9963765cd816638e0b2b47c27bf))
+
 ## [1.19.2](https://github.com/beam-community/common-config/compare/v1.19.1...v1.19.2) (2026-07-14)
 
 
