@@ -1,5 +1,16 @@
 # Changelog
 
+## [1.19.4](https://github.com/beam-community/common-config/compare/v1.19.3...v1.19.4) (2026-08-14)
+
+
+### Bug Fixes
+
+* Close downstream dependabot PRs for common-config-managed files only ([#115](https://github.com/beam-community/common-config/issues/115)) ([fd1903d](https://github.com/beam-community/common-config/commit/fd1903d98e40083efaabe486d3fbacb0572ecc80))
+* **commitlint:** Allow the long lines dependabot always emits ([#119](https://github.com/beam-community/common-config/issues/119)) ([5eff78e](https://github.com/beam-community/common-config/commit/5eff78e32c3bfefa46b22ea05653d430d5b56e95))
+* **deps:** Update actions/stale action to v11 ([#118](https://github.com/beam-community/common-config/issues/118)) ([7bbb80c](https://github.com/beam-community/common-config/commit/7bbb80cf132577149bcdd7433dcf7d58d63efe00))
+* **pr:** Skip label assignment on pull requests from forks ([#120](https://github.com/beam-community/common-config/issues/120)) ([99357e8](https://github.com/beam-community/common-config/commit/99357e8b7b6946099016753c11b6051499683479))
+* **workflows:** Scope concurrency per pull request and guard manual publish ([#117](https://github.com/beam-community/common-config/issues/117)) ([62145f8](https://github.com/beam-community/common-config/commit/62145f87aa2db4aad17093c2664cd817d52606ed))
+
 ## [1.19.3](https://github.com/beam-community/common-config/compare/v1.19.2...v1.19.3) (2026-08-01)
 
 
