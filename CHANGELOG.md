@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.19.5](https://github.com/beam-community/common-config/compare/v1.19.4...v1.19.5) (2026-09-01)
+
+
+### Bug Fixes
+
+* **scripts:** Prevent false positive phoenix_live_view plugin detection ([#121](https://github.com/beam-community/common-config/issues/121)) ([4d92e6d](https://github.com/beam-community/common-config/commit/4d92e6da687796b7fff0db3c5119d4915e13dd06))
+
 ## [1.19.4](https://github.com/beam-community/common-config/compare/v1.19.3...v1.19.4) (2026-08-14)
 
 
