@@ -29,7 +29,7 @@ fi
 FORMATTER_MODULES=()
 
 if [ -f "mix.lock" ]; then
-  if grep -q ":phoenix_live_view," mix.lock; then
+  if grep -q "  \"phoenix_live_view\": {" mix.lock; then
     echo "phoenix_live_view detected in mix.lock file"
     FORMATTER_MODULES+=("Phoenix.LiveView.HTMLFormatter")
   fi
