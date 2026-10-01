@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.19.6](https://github.com/beam-community/common-config/compare/v1.19.5...v1.19.6) (2026-10-01)
+
+
+### Bug Fixes
+
+* **deps:** Update dependency elixir-lang/elixir to 1.20 ([#123](https://github.com/beam-community/common-config/issues/123)) ([2331e2f](https://github.com/beam-community/common-config/commit/2331e2f4645abdbd0cfdf1e0f88e716cd029f6eb))
+* **deps:** Update dependency erlang/otp to v27.3.4 ([#124](https://github.com/beam-community/common-config/issues/124)) ([ac799b6](https://github.com/beam-community/common-config/commit/ac799b60d68b8f81c448148957a64af63923c124))
+
 ## [1.19.5](https://github.com/beam-community/common-config/compare/v1.19.4...v1.19.5) (2026-09-01)
 
 
