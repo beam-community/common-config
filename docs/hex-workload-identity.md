@@ -16,17 +16,7 @@ Both identities live under the beam_community organization on hex.pm.
 
 Leaving the package names empty covers every public package beam_community owns, including packages the organization becomes an owner of later.
 
-Both identities allow these repositories:
-
-- `avro_ex`
-- `stripity-stripe`
-- `ex_machina`
-- `jsonapi`
-- `ua_parser`
-- `redbird`
-- `bamboo`
-
-These are the public repositories that have a `defp package` in `mix.exs` and already receive the synced `production.yaml` and `publish-docs.yaml` workflows.
+The allowed repositories are tracked on hex.pm, not here. A repository belongs on the list when it publishes a Hex package and receives the synced `production.yaml` and `publish-docs.yaml` workflows.
 
 ### Why these values
 
@@ -45,12 +35,10 @@ These are the public repositories that have a `defp package` in `mix.exs` and al
    ```
 
 4. On hex.pm, open the beam_community organization settings, click **Edit** on both identities, and add the repository name to **Repositories**. For a private repository, add its ID after the name, found with `gh api repos/beam-community/<repo> --jq .id`.
-5. Add the repository to the list on this page.
 
 ## Pending
 
-- Create the `hexpm` environment in each listed repository.
+- Create the `hexpm` environment in each allowed repository.
 - Set `environment: hexpm` and `permissions: id-token: write` on the `Hex` job in `templates/.github/workflows/production.yaml` and `templates/.github/workflows/publish-docs.yaml`, and replace `HEX_API_KEY` with the Hex OIDC exchange.
 - Confirm the "Publish public packages" scope also allows `mix hex.publish docs`.
 - Remove the `HEX_API_KEY` secret once a release has published through the identity.
-- `bamboo_phoenix`, `formulator`, `quick_alias`, and `brady` are Hex packages that do not sync common-config yet. Add them once they do.
