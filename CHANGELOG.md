@@ -1,5 +1,20 @@
 # Changelog
 
+## [1.20.0](https://github.com/beam-community/common-config/compare/v1.19.5...v1.20.0) (2026-10-30)
+
+
+### Features
+
+* Add shared AI agent guidance and skills ([#129](https://github.com/beam-community/common-config/issues/129)) ([2371876](https://github.com/beam-community/common-config/commit/23718762645689bd8829297069ec1f035ed32364))
+* Test against the latest three Elixir releases ([#130](https://github.com/beam-community/common-config/issues/130)) ([b2aa92e](https://github.com/beam-community/common-config/commit/b2aa92e87b4b27062c83f8d2a661d05dd61b9382))
+
+
+### Bug Fixes
+
+* **deps:** Update dependency elixir-lang/elixir to 1.20 ([#123](https://github.com/beam-community/common-config/issues/123)) ([2331e2f](https://github.com/beam-community/common-config/commit/2331e2f4645abdbd0cfdf1e0f88e716cd029f6eb))
+* **deps:** Update dependency erlang/otp to v27.3.4 ([#124](https://github.com/beam-community/common-config/issues/124)) ([ac799b6](https://github.com/beam-community/common-config/commit/ac799b60d68b8f81c448148957a64af63923c124))
+* **deps:** Update dependency erlang/otp to v29 ([#126](https://github.com/beam-community/common-config/issues/126)) ([f087aea](https://github.com/beam-community/common-config/commit/f087aeaf174f89f206c9e8b588e8cb614f23a685))
+
 ## [1.19.5](https://github.com/beam-community/common-config/compare/v1.19.4...v1.19.5) (2026-09-01)
 
 
