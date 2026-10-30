@@ -119,7 +119,7 @@ Scripts in `scripts/` run in alphabetical order during sync. They:
 
 ### AI Agent Configuration
 
-`templates/AGENTS.md`, `templates/CLAUDE.md`, and the skills in `templates/.claude/skills/` give every downstream repo the same agent guidance and workflows (`pull-request`, `incorporate-feedback`, `code-review`).
+`templates/AGENTS.md`, `templates/CLAUDE.md`, and the skills in `templates/.claude/skills/` give every downstream repo the same agent guidance and workflows (`pull-request`, `incorporate-feedback`, `pr-review`).
 
 - Keep them generic. Anything true of only one repo belongs in that repo's `.agents/PROJECT.md`, which is never synced. `CLAUDE.md` imports it with `@.agents/PROJECT.md` (a missing import is a no-op) and `AGENTS.md` tells other agents to read it.
 - `SKILL.md` frontmatter must start on line 1, so the sync header goes inside the frontmatter as a YAML `#` comment.

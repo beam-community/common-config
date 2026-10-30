@@ -1,5 +1,5 @@
 ---
-name: code-review
+name: pr-review
 description: Review a pull request in this repository the way a senior BEAM Community maintainer would. Use when reviewing a pull request, re-reviewing after the author pushes changes, or commenting on changed code. Reads beyond the diff into the code it calls, verifies every finding against the actual codebase before posting it, weighs public API and compatibility impact for Hex packages, challenges the approach when the evidence supports it, and writes short, casual, non-patronizing comments.
 argument-hint: "[PR number or URL]"
 # This file is synced with beam-community/common-config. Any changes will be overwritten.

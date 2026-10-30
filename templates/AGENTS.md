@@ -148,4 +148,4 @@ Task workflows that ship with every BEAM Community repo, in `.claude/skills/` (m
 - `pull-request`: run CI's checks locally, then open a PR against `main`. Optionally babysit it
   through review and CI.
 - `incorporate-feedback`: address review comments on the current PR, reply, and resolve threads.
-- `code-review`: review a PR the way a senior maintainer would.
+- `pr-review`: review a PR the way a senior maintainer would.

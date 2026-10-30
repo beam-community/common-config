@@ -23,7 +23,7 @@ Currently at version `1.19.5`
 
 ## AI Agents
 
-Every repository receives a shared `AGENTS.md` (with a `CLAUDE.md` that imports it) and a set of agent skills in `.claude/skills/` and `.agents/skills/`: `pull-request`, `incorporate-feedback`, and `code-review`. Repository-specific agent guidance goes in `.agents/PROJECT.md`, which is never synced and is picked up by both files.
+Every repository receives a shared `AGENTS.md` (with a `CLAUDE.md` that imports it) and a set of agent skills in `.claude/skills/` and `.agents/skills/`: `pull-request`, `incorporate-feedback`, and `pr-review`. Repository-specific agent guidance goes in `.agents/PROJECT.md`, which is never synced and is picked up by both files.
 
 ## Hex Publishing
 
