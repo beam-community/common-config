@@ -24,9 +24,12 @@ common-config/
 │   ├── 001.detect-elixir-package.sh
 │   ├── 002.detect-elixir-formatter-packages.sh
 │   ├── 003.detect-postgres-version.sh
-│   ├── 004.detect-valkey-version.sh
-│   └── 005.detect-common-config-options.sh
+│   └── 004.detect-valkey-version.sh
 └── templates/               # Files synced to downstream repos
+    ├── AGENTS.md            # Shared AI agent guidance (templated)
+    ├── CLAUDE.md            # Imports AGENTS.md and .agents/PROJECT.md
+    ├── .claude/skills/      # Shared agent skills
+    ├── .agents/skills       # Symlink to .claude/skills; expanded to real files on sync
     ├── .credo.exs
     ├── .formatter.exs       # Templated with {{ variables }}
     ├── .tool-versions
@@ -52,22 +55,21 @@ Files in `templates/` use Handlebars-style templating:
 | `{{ FORMATTER_PLUGINS }}` | Script 002 | Formatter plugins (e.g., `Phoenix.LiveView.HTMLFormatter`) |
 | `{{ POSTGRES_VERSION }}` | Script 003 | PostgreSQL version from existing CI config |
 | `{{ VALKEY_VERSION }}` | Script 004 | Valkey version from existing CI config |
-| `{{ RELEASE_PLEASE_ENABLED }}` | Script 005 | `true` (default) or `false` from `.common-config.yml` |
 
-**Note:** Template variables in workflow files use `$\{{` escaping to prevent GitHub Actions interpolation during sync.
+**Note:** Every file under `templates/` is rendered with Handlebars, not just workflows. Any literal `{{` (GitHub Actions expressions, examples in Markdown) must be escaped as `\{{` (workflows use `$\{{`), or the file fails to render and is silently skipped.
 
 ## Downstream Configuration
 
-Downstream repositories can customize sync behavior by creating a `.common-config.yml` file in the repo root:
+Downstream repositories can customize sync behavior in `.github/common-config.yaml`, read by actions-sync. The most common use is opting out of specific files:
 
 ```yaml
-# .common-config.yml
-release-please: false  # Disable release-please automation (default: true)
+# .github/common-config.yaml
+ignore-files:
+  - .github/common-config.yaml # Ignore this file itself
+  - .github/workflows/release.yaml
 ```
 
-When `release-please: false` is set, the following files will not be synced:
-- `.github/workflows/release.yaml`
-- `.github/release-please-config.json`
+Patterns are globs matched against paths relative to `templates/`. Other supported keys mirror the actions-sync inputs (`pr-enabled`, `pr-labels`, `pr-title`, `commit-message`, ...).
 
 ## Commit Message Convention
 
@@ -115,6 +117,15 @@ Scripts in `scripts/` run in alphabetical order during sync. They:
 - Write to `$TEMPLATE_ENV` to set template variables
 - Should be idempotent and handle missing files gracefully
 
+### AI Agent Configuration
+
+`templates/AGENTS.md`, `templates/CLAUDE.md`, and the skills in `templates/.claude/skills/` give every downstream repo the same agent guidance and workflows (`pull-request`, `incorporate-feedback`, `pr-review`).
+
+- Keep them generic. Anything true of only one repo belongs in that repo's `.agents/PROJECT.md`, which is never synced. `CLAUDE.md` imports it with `@.agents/PROJECT.md` (a missing import is a no-op) and `AGENTS.md` tells other agents to read it.
+- `SKILL.md` frontmatter must start on line 1, so the sync header goes inside the frontmatter as a YAML `#` comment.
+- Claude Code loads skills from `.claude/skills/`; Codex and other agents use `.agents/skills/`. `templates/.agents/skills` is a symlink, so there is one source here and actions-sync writes real copies to both locations downstream.
+- In `AGENTS.md`, keep Elixir module attributes in backticks (`` `@doc` ``). Claude Code treats a bare `@path` as a file import.
+
 ### Modifying CI Workflows
 
 Workflow templates in `templates/.github/workflows/` support conditionals:
@@ -145,7 +156,7 @@ Publishable Hex packages (`IS_MIX_PACKAGE=true`) test against:
 
 ## Sync Schedule
 
-- **Automatic:** 8th of each month at 12:08 UTC
+- **Automatic:** 1st of each month at 00:00 UTC
 - **On-demand:** Push to `main` branch of downstream repo's `common-config.yaml`
 - **Manual:** Workflow dispatch or `repository_dispatch` event
 
@@ -179,11 +190,13 @@ gh workflow view ci.yaml
 | `templates/.formatter.exs` | Elixir formatter config (templated) |
 | `templates/.tool-versions` | asdf version pinning |
 | `templates/.github/workflows/ci.yaml` | CI pipeline template |
-| `templates/.github/workflows/pr.yaml` | PR title validation template |
+| `templates/.github/workflows/pr.yaml` | Commit linting and PR labeling template |
+| `templates/AGENTS.md` | Shared AI agent guidance (templated) |
+| `templates/.claude/skills/` | Shared agent skills |
 
 ## External Dependencies
 
 - [beam-community/actions-sync](https://github.com/beam-community/actions-sync) - Template sync mechanism
 - [erlef/setup-beam](https://github.com/erlef/setup-beam) - Elixir/OTP setup action
 - [google-github-actions/release-please-action](https://github.com/google-github-actions/release-please-action) - Release automation
-- [beam-community/actions-pr-title](https://github.com/beam-community/actions-pr-title) - PR title validation
+- [wagoid/commitlint-github-action](https://github.com/wagoid/commitlint-github-action) - Conventional commit validation

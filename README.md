@@ -21,6 +21,10 @@ Currently at version `1.19.5`
 - Create a PR.
 - On initial merge and on a [recurring schedule](./templates/.github/workflows/common-config.yaml#L15), updates will be synced with this repository.
 
+## AI Agents
+
+Every repository receives a shared `AGENTS.md` (with a `CLAUDE.md` that imports it) and a set of agent skills in `.claude/skills/` and `.agents/skills/`: `pull-request`, `incorporate-feedback`, and `pr-review`. Repository-specific agent guidance goes in `.agents/PROJECT.md`, which is never synced and is picked up by both files.
+
 ## Hex Publishing
 
 Packages are moving from the `HEX_API_KEY` secret to Hex workload identities configured on hex.pm. See [Hex Workload Identity](./docs/hex-workload-identity.md) for the configured identities and how to add a repository.
