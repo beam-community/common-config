@@ -38,7 +38,7 @@ common-config/
 
 ## Technologies
 
-- **Elixir 1.19** / **Erlang/OTP 27** (defined in `.tool-versions`)
+- **Elixir 1.20** / **Erlang/OTP 29** (defined in `templates/.tool-versions`)
 - **GitHub Actions** for CI/CD
 - **Release Please** for semantic versioning
 - **Dependabot** for dependency updates
@@ -151,8 +151,9 @@ The synced `.credo.exs` enforces:
 ## CI Matrix (for packages)
 
 Publishable Hex packages (`IS_MIX_PACKAGE=true`) test against:
-- Elixir 1.17, 1.18, 1.19
-- OTP 27
+- Elixir 1.18 on OTP 27, 1.19 on OTP 28, 1.20 on OTP 29
+
+This covers the three most recent Elixir minor releases, each on the newest OTP it supports (see Elixir's [compatibility table](https://hexdocs.pm/elixir/compatibility-and-deprecations.html)). Single-version jobs (Credo, Dialyzer, Format, docs, production) use the newest pair. Quote matrix versions: unquoted `1.20` is the YAML float `1.2`.
 
 ## Sync Schedule
 
